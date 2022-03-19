@@ -1,0 +1,77 @@
+[Door]
+- 오브젝트 설정 태그: Door
+- 필수 컴포넌트: Collider
+- 컴포넌트 기능:
+	Can Open: 문을 열 수 있을경우 활성화됨.
+	Door Open: 문이 열렸을경우 활성화됨.
+	Door Locked: 문이 잠겼을경우 활성화됨.
+	Door Key Item Code: 문 잠금해제시 필요한 아이템 코드
+	Sounds : 소리 프리셋.
+
+[DoorSound Preset]
+- 데이터:
+	Door Open Sound: 문이 열릴때 나는 소리.
+	Door Close Sound: 문을 닫을때 나는 소리.
+	Door Unlock Sound: 문을 잠금해제할때 나는 소리.
+	Door Knocking Sound: 문을 두드릴때 나는 소리. (이벤트용)
+
+	Door Open Volume: 문이 열릴때 나는 소리의 볼륨.
+	Door Close Volume: 문을 닫을때 나는 소리의 볼륨.
+	Door Unlock Volume: 문을 잠금해제할때 나는 소리의 볼륨.
+	Door Knocking Volume: 문을 두드릴때 나는 소리의 볼륨.
+
+[Potal]
+오브젝트 설정 태그: Potal
+- 필수 컴포넌트: Collider
+- 컴포넌트 기능:
+	Potal Trigger Type: [PotalTriggerType]참고
+	Potal Type: [PotalType]참고
+	Potal Locked: 포탈 잠금여부
+
+	<Potal Type == Teleport 일때 표시됨>
+	Teleport Postion: 텔레포트 위치
+	Teleport View Rotation : 텔레포트 후 시점
+
+	<Potal Type == ChangeStage 일때 표시됨>
+	Change Stage Name: 변경될 스테이지
+
+[PotalTriggerType]
+	Interaction: 상호작용시 트리거 활성화
+    Enter: 진입시 트리거 활성화
+
+[PotalType]
+	StageChange: 트리거 활성화시 Scene 변경
+    Teleport: 트리거 활성화시 위치 변경
+
+[Item]
+- 필수 컴포넌트: Collider
+- 컴포넌트 기능:
+	ItemCode: ItemDatabase에서 참조할 아이템 코드
+
+[ItemDatabase]
+- 데이터:
+	Item Datas: 아이템 데이터 목록 - [Item Data]참고
+
+[ItemData]
+- 데이터:
+	Item Type: 아이템 타입 (ItemType 참고)
+	Item Icon: UI에 표시될 아이템 아이콘
+	ItemImage: UI에 표시될 아이템 상세 이미지
+	Item Code: 아이템 식별을 위한 코드
+	item Name: 아이템의 이름
+	item Info: UI에 표시될 아이템 설명
+	disposable: 일회성 아이템 여부 (활성화시 일회성 아이템)
+
+[ItemType]
+	Consumable: 소모품
+	Key: 열쇠
+	Etc: 기타아이템
+
+[Event Zone]
+- 필수 컴포넌트: Collider
+- 컴포넌트 기능:
+	Enter Event: 플레이어가 BoxCollider 내부로 진입했을경우 실행됨.
+	Stay Event: 플레이어가 BoxCollider 내부에서 플레이어의 위치가 업데이트될 경우 실행됨.
+	Exit Event: 플레이어가 BoxCollider 외부로 나갔을경우 실행됨. BoxCollider는 비활성화됨.
+- 참조:
+	[InfoUI] - ShowInfo(string text)를 이벤트로 등록하여 하단 문장 출력가능. 문장이 보여지는 시간은 3초

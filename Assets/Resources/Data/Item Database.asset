@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d236c47a4e54c241bea884613f63d45, type: 3}
+  m_Name: Item Database
+  m_EditorClassIdentifier: 
+  itemDatas:
+  - itemType: 1
+    itemIcon: {fileID: 21300000, guid: c0617c4463edce74992d129e0ddbab17, type: 3}
+    itemImage: {fileID: 21300000, guid: 84c5abf39f5aa5c45b6d6a8783c5f05c, type: 3}
+    itemCode: Manager's_Room_Key
+    itemName: "\uAD00\uB9AC\uC790\uBC29 \uC5F4\uC1E0"
+    itemInfo: "\uAD00\uB9AC\uC790 \uBC29\uC758 \uBB38\uC744 \uC5F4 \uC218 \uC788\uB2E4."
+    disposable: 1
+  - itemType: 1
+    itemIcon: {fileID: 21300000, guid: c0617c4463edce74992d129e0ddbab17, type: 3}
+    itemImage: {fileID: 21300000, guid: 84c5abf39f5aa5c45b6d6a8783c5f05c, type: 3}
+    itemCode: Room_Master_Key
+    itemName: "\uB9C8\uC2A4\uD130 \uD0A4"
+    itemInfo: "\uBAA8\uB4E0 \uBC29\uC758 \uBB38\uC744 \uC5F4 \uC218 \uC788\uB2E4."
+    disposable: 0

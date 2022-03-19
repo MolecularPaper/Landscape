@@ -1,0 +1,31 @@
+//기본 코드 양식
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+namespace Namespace
+{
+    public class BasicCodeForm : MonoBehaviour
+    {
+        #region Variables
+        //변수 작성
+        #endregion
+
+        #region Properties
+        //프로퍼티 작성
+        #endregion
+
+        #region Unity Event Methods
+        //유니티 이벤트 메소드 작성
+        #endregion
+
+        #region Methods
+        //일반 메소드 작성
+        #endregion
+
+        #region Debug
+        //디버그 메소드 작성(있을경우)
+        #endregion
+    }
+}
